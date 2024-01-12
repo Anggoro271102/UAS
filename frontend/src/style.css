@@ -1,0 +1,281 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  
+}
+
+body{
+  color: #ededed;
+  background: #081b29 ;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo{
+  position: relative;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 1;
+  background-color: transparent;
+  animation: slideRight .5s ease;
+}
+
+.navbar a{
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+  background-color: transparent;
+  opacity: 1;
+  animation: slideTop .5s ease;
+}
+
+
+.navbar a:hover{
+  color: #0ef;
+  border-bottom: #0ef solid 2px;
+  
+}
+.navbar{
+  background-color: transparent;
+}
+
+.photo{
+  width: 300px; 
+  height: 300px;
+  border-radius: 45%; 
+  overflow: hidden;
+  animation: slideLeft .5s ease;
+}
+.photo img {
+  width: 100%; /* Make the image fill the circle */
+  height: auto; /* Automatically adjust the height to maintain the aspect ratio */ 
+}
+
+.home{
+  position: relative;
+  width: 100%;
+  justify-content: space-between ;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 70px 10% 0;
+}
+
+
+.home-content h3 span {
+  color: #0ef;
+}
+.home-content h2 span:nth-of-type(2){
+  margin-bottom:30px ;
+}
+.home-content h1,h2,h3  {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+.home-content{
+  animation: slideRight .5s ease;
+}
+.about{
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: center;
+  gap: 1.5rem;
+}
+.about-text h2{
+  font-size: 60px;
+}
+.about-text h2 span{
+  color: #0ef;
+}
+.about-text h4{
+  font-size: 29px;
+  font-weight: 600;
+  color:#fff;
+  line-height: 1.7;
+  margin: 15px 0 30px;
+}
+.about-text{
+  animation: slideLeft .3s ease;
+}
+
+.headAbout{
+  position: absolute;
+  display: flexbox;
+  align-items: start;
+}
+.aboutIcon{
+  width: 300px; 
+  height: 300px;
+  border-radius: 45%; 
+  overflow: hidden;
+  animation: slideRight .3s ease;
+  right: 10%;
+  margin-left: 12%;
+}
+.aboutIcon img{
+  width: 100%; 
+  height: auto; 
+}
+#service{
+  color: aliceblue;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+}
+.container{
+  padding: 90px;
+}
+.containerhobby{
+  padding: 90px;
+}
+.sub-title{
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 70px;
+}
+.hobbytitle{
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 70px;
+}
+.sub-title span{
+  color: #0ef;
+}
+.hobbytitle span{
+  color: #0ef;
+}
+
+.service-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(259px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.hobby-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(259px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.service-list div{
+  animation: slideTop .7s ease;
+  background-color: transparent;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 13px;
+  border-right: 10px;
+  border-radius: 20px;
+  transition: background 0.5s, transform 0.5s;
+  box-shadow: 1px 1px 20px #011290f7, 1px 1px 40px #0053b8f7 
+}
+.hobby-list div{
+  animation: slideTop .7s ease;
+  background-color: transparent;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 13px;
+  border-right: 10px;
+  border-radius: 20px;
+  transition: background 0.5s, transform 0.5s;
+  box-shadow: 1px 1px 20px #011290f7, 1px 1px 40px #0053b8f7 
+}
+
+.service-list div i{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.hobby-list div i{
+  font-size: 50px;
+  margin-bottom: 30px; 
+}
+.service-list div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.hobby-list div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.service-list div a{
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.contactUs h1{
+  text-align: center;
+}
+.con span{
+  color: #0ef;
+}
+.contactUs{
+  animation: slideTop .8s ease;
+  padding: 50px;
+  background-color: #000;
+}
+.contactUs h1{
+  padding: 20px;
+}
+.contactUs p{
+  padding: 10px;
+}
+
+@keyframes slideRight {
+  0%{
+      transform: translateX(-100px);
+      opacity: 0;
+  }100%{
+      transform: translateX(0px);
+      opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0%{
+      transform: translateY(100px);
+      opacity: 0;
+  }100%{
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  0%{
+      transform: translateX(100px);
+      opacity: 0;
+  }100%{
+      transform: translateX(0px);
+      opacity: 1;
+  }
+}
+
+
+
+
+
